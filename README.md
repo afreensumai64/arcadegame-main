@@ -1,35 +1,26 @@
-Arcade Zone is a lightweight, browser-based arcade platform that lets users play fun and interactive mini-games without any downloads. It is designed to be simple, responsive, and accessible on any modern web browser.
+# 🎮 Arcade Zone – Simple Browser Games
 
-🚀 Features
+Arcade Zone is a simple and lightweight browser-based arcade app where users can enjoy fun mini-games without installing anything. The app is designed to be fast, responsive, and easy to use.
 
-🎲 Multiple Mini Games
+---
 
-Memory Match Game
+## 🚀 Features
 
-Number Guessing Game
+- 🎲 Fun mini-games like Memory Match and Number Guessing  
+- 🌐 Runs directly in the browser  
+- 📱 Responsive design for mobile and desktop  
+- ⚡ Fast loading and smooth gameplay  
 
-🌐 Browser-Based
+---
 
-No installation required
+## 🛠️ Tech Stack
 
-Works directly in the browser
+- HTML5  
+- CSS3  
+- TypeScript  
+- React (Vite)
 
-📱 Responsive Design
+---
 
-Optimized for desktop and mobile screens
+## 📂 Project Structure
 
-⚡ Fast & Lightweight
-
-Minimal loading time
-
-Smooth user experience
-
-🛠️ Tech Stack
-
-HTML5
-
-CSS3
-
-TypeScript
-
-React (Vite setup)
