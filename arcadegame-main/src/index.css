@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 15% 9%;
+    --foreground: 60 30% 96%;
+
+    --card: 240 15% 13%;
+    --card-foreground: 60 30% 96%;
+
+    --popover: 240 15% 13%;
+    --popover-foreground: 60 30% 96%;
+
+    --primary: 165 100% 50%;
+    --primary-foreground: 240 15% 9%;
+
+    --secondary: 280 100% 65%;
+    --secondary-foreground: 60 30% 96%;
+
+    --muted: 240 15% 20%;
+    --muted-foreground: 240 10% 60%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 240 15% 9%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 60 30% 96%;
+
+    --border: 240 15% 25%;
+    --input: 240 15% 20%;
+    --ring: 165 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom game colors */
+    --neon-cyan: 165 100% 50%;
+    --neon-pink: 330 100% 65%;
+    --neon-purple: 280 100% 65%;
+    --neon-yellow: 45 100% 60%;
+    --neon-green: 120 100% 50%;
+
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-purple)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--neon-pink)), hsl(var(--neon-purple)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--neon-yellow)), hsl(var(--accent)));
+
+    /* Shadows */
+    --glow-cyan: 0 0 20px hsl(var(--neon-cyan) / 0.5), 0 0 40px hsl(var(--neon-cyan) / 0.3);
+    --glow-pink: 0 0 20px hsl(var(--neon-pink) / 0.5), 0 0 40px hsl(var(--neon-pink) / 0.3);
+    --glow-purple: 0 0 20px hsl(var(--neon-purple) / 0.5), 0 0 40px hsl(var(--neon-purple) / 0.3);
+
+    --sidebar-background: 240 15% 9%;
+    --sidebar-foreground: 60 30% 96%;
+    --sidebar-primary: 165 100% 50%;
+    --sidebar-primary-foreground: 240 15% 9%;
+    --sidebar-accent: 240 15% 20%;
+    --sidebar-accent-foreground: 60 30% 96%;
+    --sidebar-border: 240 15% 25%;
+    --sidebar-ring: 165 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-pixel {
+    font-family: 'Press Start 2P', cursive;
+  }
+}
+
+@layer utilities {
+  .text-glow-cyan {
+    text-shadow: 0 0 10px hsl(var(--neon-cyan) / 0.8), 0 0 20px hsl(var(--neon-cyan) / 0.5);
+  }
+
+  .text-glow-pink {
+    text-shadow: 0 0 10px hsl(var(--neon-pink) / 0.8), 0 0 20px hsl(var(--neon-pink) / 0.5);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.8), 0 0 20px hsl(var(--neon-purple) / 0.5);
+  }
+
+  .box-glow-cyan {
+    box-shadow: var(--glow-cyan);
+  }
+
+  .box-glow-pink {
+    box-shadow: var(--glow-pink);
+  }
+
+  .box-glow-purple {
+    box-shadow: var(--glow-purple);
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+    50% {
+      opacity: 0.8;
+      filter: brightness(1.2);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .scanlines {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(var(--background) / 0.1) 2px,
+      hsl(var(--background) / 0.1) 4px
+    );
+  }
+}
