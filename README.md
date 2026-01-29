@@ -1,73 +1,35 @@
-# Welcome to your Lovable project
+Arcade Zone is a lightweight, browser-based arcade platform that lets users play fun and interactive mini-games without any downloads. It is designed to be simple, responsive, and accessible on any modern web browser.
 
-## Project info
+🚀 Features
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🎲 Multiple Mini Games
 
-## How can I edit this code?
+Memory Match Game
 
-There are several ways of editing your application.
+Number Guessing Game
 
-**Use Lovable**
+🌐 Browser-Based
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+No installation required
 
-Changes made via Lovable will be committed automatically to this repo.
+Works directly in the browser
 
-**Use your preferred IDE**
+📱 Responsive Design
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Optimized for desktop and mobile screens
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+⚡ Fast & Lightweight
 
-Follow these steps:
+Minimal loading time
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Smooth user experience
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🛠️ Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+HTML5
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+CSS3
 
-**Edit a file directly in GitHub**
+TypeScript
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+React (Vite setup)
